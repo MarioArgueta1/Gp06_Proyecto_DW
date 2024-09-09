@@ -103,7 +103,7 @@ go
 /* Table: DIMTIEMPO                                             */
 /*==============================================================*/
 create table DIMTIEMPO (
-   IDTIEMPO             int identity(1,1)    not null,
+   IDTIEMPO             int    not null,
    FECHACOMPLETA        datetime             not null,
    DIADELASEMANA        int                  not null,
    NUMERODEDIADELMES    int                  not null,
