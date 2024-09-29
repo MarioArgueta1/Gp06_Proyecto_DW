@@ -23,4 +23,4 @@ WHEN 'PAB' THEN 'Balboa'
 WHEN 'MXN' THEN 'Peso mexicano'
 ELSE 'Sin especificar'
 END AS 'Moneda'
-from sales_order_address sor inner join sales_order so on so.entity_id = sor.parent_id where sor.address_type = "shipping"
+from sales_order_address sor inner join sales_order so on so.entity_id = sor.parent_id where sor.address_type = 'shipping'

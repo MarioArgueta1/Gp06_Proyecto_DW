@@ -33,4 +33,19 @@
     "version" : "Latest",
     "type" : "routine"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_Tq1usH5_Ee-3SP6GOVTzjg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_-5nmsH53Ee-3SP6GOVTzjg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
 } ]
