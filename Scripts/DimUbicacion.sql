@@ -11,7 +11,7 @@ WHEN 'MX' THEN 'Mexico'
 ELSE 'Sin especificar'
 END AS 'Pais',
 sor.city as 'Ciudad',
-CONCAT(sor.street,',',sor.region) as 'Direccion',
+CONCAT_WS(', ', a.street, a.region) as 'Direccion',
 CASE so.order_currency_code
 WHEN 'BZD' THEN 'Dolar beliceño'
 WHEN 'CRC' THEN 'Colon costarricense'

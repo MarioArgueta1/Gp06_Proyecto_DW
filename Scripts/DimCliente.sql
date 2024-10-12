@@ -1,7 +1,7 @@
-SELECT c.entity_id AS 'IdClienteN', 
+SELECT DISTINCT c.entity_id AS 'IdClienteN', 
 CONCAT_WS(' ', c.firstname, c.middlename, c.lastname) AS Nombre,
 c.email AS 'email', 
-c.dob AS 'FechaDeNacimiento',
+COALESCE(c.dob, 'Sin especificar') AS 'FechaDeNacimiento',
 CASE 
     WHEN c.gender = 1 THEN 'Masculino'
     WHEN c.gender = 2 THEN 'Femenino'
