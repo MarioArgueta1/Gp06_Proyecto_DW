@@ -25,4 +25,4 @@ LEFT JOIN
     AND cv.attribute_id = 45
 INNER JOIN `cataloginventory_stock_item` as si on e.entity_id = si.product_id
 GROUP BY 
-    e.entity_id;
+    e.entity_id

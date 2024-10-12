@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_28BnIIjBEe-qQZVq5g8HBg" comment="connectionComment" label="connectionLabel" dataPackage="_28BnIYjBEe-qQZVq5g8HBg" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_28BnIYjBEe-qQZVq5g8HBg" dataManager="_28BnIIjBEe-qQZVq5g8HBg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_28BnIojBEe-qQZVq5g8HBg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_28BnI4jBEe-qQZVq5g8HBg" name="IDCLIENTEN" id="17892" label="IDCLIENTEN" length="-1" precision="-1" sourceType="INT" talendType="id_Integer" key="true">
+        <initialValue xmi:id="_28BnJIjBEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_28BnJYjBEe-qQZVq5g8HBg" name="NOMBRE" id="17893" label="NOMBRE" length="250" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_28BnJojBEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_28BnJ4jBEe-qQZVq5g8HBg" name="DIRECCION" id="17894" label="DIRECCION" length="300" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_28BnKIjBEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_28BnKYjBEe-qQZVq5g8HBg" name="CIUDAD" id="17895" label="CIUDAD" length="300" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_28BnKojBEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_28BnK4jBEe-qQZVq5g8HBg" name="PAIS" id="17896" label="PAIS" length="150" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_28BnLIjBEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_28BnLYjBEe-qQZVq5g8HBg" name="EMAIL" id="17897" label="EMAIL" length="250" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_28BnLojBEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_28BnL4jBEe-qQZVq5g8HBg" name="FECHADENACIMIENTO" id="17898" label="FECHADENACIMIENTO" length="-1" precision="-1" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_28BnMIjBEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_28BnMYjBEe-qQZVq5g8HBg" name="GENERO" id="17899" label="GENERO" length="10" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_28BnMojBEe-qQZVq5g8HBg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

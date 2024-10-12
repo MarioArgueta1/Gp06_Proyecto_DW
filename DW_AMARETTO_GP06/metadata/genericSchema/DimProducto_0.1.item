@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_5xDyMojPEe-qQZVq5g8HBg" comment="connectionComment" label="connectionLabel" dataPackage="_5xDyM4jPEe-qQZVq5g8HBg" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_5xDyM4jPEe-qQZVq5g8HBg" dataManager="_5xDyMojPEe-qQZVq5g8HBg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_5xDyNIjPEe-qQZVq5g8HBg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5xDyNYjPEe-qQZVq5g8HBg" name="IDPRODUCTON" id="98021" label="IDPRODUCTON" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_5xDyNojPEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5xDyN4jPEe-qQZVq5g8HBg" name="NOMBRE" id="98022" label="NOMBRE" length="250" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_5xDyOIjPEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5xDyOYjPEe-qQZVq5g8HBg" name="CATEGORIA" id="98023" label="CATEGORIA" length="250" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_5xDyOojPEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5xDyO4jPEe-qQZVq5g8HBg" name="DESCRIPCION" id="98024" label="DESCRIPCION" length="500" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_5xDyPIjPEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5xDyPYjPEe-qQZVq5g8HBg" name="PRECIOUNITARIO" id="98025" label="PRECIOUNITARIO" length="5" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_5xDyPojPEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5xDyP4jPEe-qQZVq5g8HBg" name="STOCK" id="98026" label="STOCK" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_5xDyQIjPEe-qQZVq5g8HBg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_LK-zwojCEe-qQZVq5g8HBg" comment="connectionComment" label="connectionLabel" dataPackage="_LK-zw4jCEe-qQZVq5g8HBg" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_LK-zw4jCEe-qQZVq5g8HBg" dataManager="_LK-zwojCEe-qQZVq5g8HBg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_LK-zxIjCEe-qQZVq5g8HBg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LK-zxYjCEe-qQZVq5g8HBg" name="IDUBICACIONN" id="92" label="IDUBICACIONN" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_LK-zxojCEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LK-zx4jCEe-qQZVq5g8HBg" name="PAIS" id="93" label="PAIS" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_LK-zyIjCEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LK-zyYjCEe-qQZVq5g8HBg" name="CIUDAD" id="94" label="CIUDAD" length="300" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_LK-zyojCEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LK-zy4jCEe-qQZVq5g8HBg" name="DIRECCION" id="95" label="DIRECCION" length="300" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_LK-zzIjCEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LK-zzYjCEe-qQZVq5g8HBg" name="MONEDA" id="96" label="MONEDA" length="200" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_LK-zzojCEe-qQZVq5g8HBg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
