@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_t2xdkIjnEe-qQZVq5g8HBg" comment="connectionComment" label="connectionLabel" dataPackage="_t2xdkYjnEe-qQZVq5g8HBg" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_t2xdkYjnEe-qQZVq5g8HBg" dataManager="_t2xdkIjnEe-qQZVq5g8HBg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_t2xdkojnEe-qQZVq5g8HBg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdk4jnEe-qQZVq5g8HBg" name="IdProducto" id="142612" label="IdProducto" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_t2xdlIjnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdlYjnEe-qQZVq5g8HBg" name="IdUbicacion" id="142613" label="IdUbicacion" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_t2xdlojnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdl4jnEe-qQZVq5g8HBg" name="IdCliente" id="142614" label="IdCliente" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_t2xdmIjnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdmYjnEe-qQZVq5g8HBg" name="IdTiempo" id="142615" label="IdTiempo" length="-1" precision="-1" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_t2xdmojnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdm4jnEe-qQZVq5g8HBg" name="TipoTransaccion" id="142616" label="TipoTransaccion" length="50" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_t2xdnIjnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdnYjnEe-qQZVq5g8HBg" name="Cantidad" id="142617" label="Cantidad" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_t2xdnojnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdn4jnEe-qQZVq5g8HBg" name="PrecioUnitario" id="142618" label="PrecioUnitario" length="5" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_t2xdoIjnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdoYjnEe-qQZVq5g8HBg" name="TotalTransaccion" id="142619" label="TotalTransaccion" length="8" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_t2xdoojnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdo4jnEe-qQZVq5g8HBg" name="CostoTraslado" id="142620" label="CostoTraslado" length="8" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_t2xdpIjnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdpYjnEe-qQZVq5g8HBg" name="CostoAlmacen" id="142621" label="CostoAlmacen" length="8" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_t2xdpojnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdp4jnEe-qQZVq5g8HBg" name="CostoInventario" id="142622" label="CostoInventario" length="8" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_t2xdqIjnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdqYjnEe-qQZVq5g8HBg" name="TiempoEntregaDias" id="142623" label="TiempoEntregaDias" length="-1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_t2xdqojnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdq4jnEe-qQZVq5g8HBg" name="Descuento" id="142624" label="Descuento" length="8" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_t2xdrIjnEe-qQZVq5g8HBg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t2xdrYjnEe-qQZVq5g8HBg" name="CostoTotalTransaccion" id="142625" label="CostoTotalTransaccion" length="10" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_t2xdrojnEe-qQZVq5g8HBg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

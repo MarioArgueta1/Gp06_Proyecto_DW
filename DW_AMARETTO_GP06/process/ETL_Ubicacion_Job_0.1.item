@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:BVEHgQfQi+/zbhG8qABUCzYgzpr2jx7qccWW9Yx0" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:Niut6RmHscoqfn2u1uiqBSUW7MvcCydgTizFncXO" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tlwfsM9sjBCiPswNjiqdB45rc78KUJJPyW6OeEzi" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:J3spQ+11MxqG1/pW4vXAD84UD/NeXfLmL7wXoBbA" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -119,13 +119,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;magento&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8hT9cwfWIqAVG7aBP62XdicHOFXzgs/2jrVp0W3p"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QwKzLwrYtNoBFPI8F9UCWpMAyyCJ2gZHib+lZeo0"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DIMUBICACION&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT sor.entity_id as 'IdUbicacionN', &#xD;&#xA;CASE sor.country_id&#xD;&#xA;WHEN 'BZ' THEN 'Belice'&#xD;&#xA;WHEN 'CR' THEN 'Costa Rica'&#xD;&#xA;WHEN 'SV' THEN 'El Salvador'&#xD;&#xA;WHEN 'GT' THEN 'Guatemala'&#xD;&#xA;WHEN 'HN' THEN 'Honduras'&#xD;&#xA;WHEN 'NI' THEN 'Nicaragua'&#xD;&#xA;WHEN 'PA' THEN 'Panama'&#xD;&#xA;WHEN 'MX' THEN 'Mexico'&#xD;&#xA;ELSE 'Sin especificar'&#xD;&#xA;END AS 'Pais',&#xD;&#xA;sor.city as 'Ciudad',&#xD;&#xA;CONCAT(sor.street,',',sor.region) as 'Direccion',&#xD;&#xA;CASE so.order_currency_code&#xD;&#xA;WHEN 'BZD' THEN 'Dolar beliceño'&#xD;&#xA;WHEN 'CRC' THEN 'Colon costarricense'&#xD;&#xA;WHEN 'USD' THEN 'Dolar estadounidense'&#xD;&#xA;WHEN 'GTQ' THEN 'Quetzal'&#xD;&#xA;WHEN 'HNL' THEN 'Lempira hondureño'&#xD;&#xA;WHEN 'NIC' THEN 'Cordoba nicaraguense'&#xD;&#xA;WHEN 'PAB' THEN 'Balboa'&#xD;&#xA;WHEN 'MXN' THEN 'Peso mexicano'&#xD;&#xA;ELSE 'Sin especificar'&#xD;&#xA;END AS 'Moneda'&#xD;&#xA;from sales_order_address sor inner join sales_order so on so.entity_id = sor.parent_id where sor.address_type = 'shipping'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT sor.entity_id as 'IdUbicacionN', &#xD;&#xA;CASE sor.country_id&#xD;&#xA;WHEN 'BZ' THEN 'Belice'&#xD;&#xA;WHEN 'CR' THEN 'Costa Rica'&#xD;&#xA;WHEN 'SV' THEN 'El Salvador'&#xD;&#xA;WHEN 'GT' THEN 'Guatemala'&#xD;&#xA;WHEN 'HN' THEN 'Honduras'&#xD;&#xA;WHEN 'NI' THEN 'Nicaragua'&#xD;&#xA;WHEN 'PA' THEN 'Panama'&#xD;&#xA;WHEN 'MX' THEN 'Mexico'&#xD;&#xA;ELSE 'Sin especificar'&#xD;&#xA;END AS 'Pais',&#xD;&#xA;sor.city as 'Ciudad',&#xD;&#xA;CONCAT_WS(', ', sor.street, sor.region) as 'Direccion',&#xD;&#xA;CASE so.order_currency_code&#xD;&#xA;WHEN 'BZD' THEN 'Dolar beliceño'&#xD;&#xA;WHEN 'CRC' THEN 'Colon costarricense'&#xD;&#xA;WHEN 'USD' THEN 'Dolar estadounidense'&#xD;&#xA;WHEN 'GTQ' THEN 'Quetzal'&#xD;&#xA;WHEN 'HNL' THEN 'Lempira hondureño'&#xD;&#xA;WHEN 'NIC' THEN 'Cordoba nicaraguense'&#xD;&#xA;WHEN 'PAB' THEN 'Balboa'&#xD;&#xA;WHEN 'MXN' THEN 'Peso mexicano'&#xD;&#xA;ELSE 'Sin especificar'&#xD;&#xA;END AS 'Moneda'&#xD;&#xA;from sales_order_address sor inner join sales_order so on so.entity_id = sor.parent_id where sor.address_type = 'shipping'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -147,6 +147,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="MONEDA"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="DIMUBICACION" name="tDBInput_1">
       <column comment="" key="true" length="10" name="IDUBICACIONN" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -181,7 +182,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;AmarettoDW&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;amaretto&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CI961lU5u36ZBtfaWKqG7B3j0u8501Zb8WwLPlh+8IRYNMtVS3J9/Jci"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ed6vMwD1BBRoLC9y/0w3Cxic9Bm/eeiwvF9qSJ1D5gyBULtyIZtT8QQw"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DIMUBICACION&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>

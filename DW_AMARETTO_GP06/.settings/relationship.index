@@ -1,5 +1,32 @@
 [ {
   "baseItem" : {
+    "id" : "_-g1wsIjzEe-Daefq2MaVPA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_-5nmsH53Ee-3SP6GOVTzjg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg - DIMCLIENTE",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg - DIMPRODUCTO",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg - DIMUBICACION",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_OjRkQIjNEe-qQZVq5g8HBg",
     "version" : "0.1",
     "type" : "job"
@@ -65,6 +92,41 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_WZRt0IjmEe-qQZVq5g8HBg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_-5nmsH53Ee-3SP6GOVTzjg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg - DIMCLIENTE",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg - DIMPRODUCTO",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg - DIMTIEMPO",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg - DIMUBICACION",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg - FACTTRANSACCIONES",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_pi_LcIirEe-zLavHNNjN3A",
     "version" : "0.1",
     "type" : "job"
@@ -73,5 +135,28 @@
     "id" : "_kk6ccH56Ee-3SP6GOVTzjg",
     "version" : "Latest",
     "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_xJxlwIjvEe-Daefq2MaVPA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "DW_AMARETTO_GP06:_OjRkQIjNEe-qQZVq5g8HBg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "DW_AMARETTO_GP06:_Tq1usH5_Ee-3SP6GOVTzjg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "DW_AMARETTO_GP06:_WZRt0IjmEe-qQZVq5g8HBg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "DW_AMARETTO_GP06:_pi_LcIirEe-zLavHNNjN3A",
+    "version" : "Latest",
+    "type" : "job"
   } ]
 } ]

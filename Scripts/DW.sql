@@ -149,11 +149,10 @@ go
 /* Table: FACTTRANSACCIONES                                     */
 /*==============================================================*/
 create table FACTTRANSACCIONES (
-   IDTRANSACCION        int identity(1,1)    not null,
-   IDPRODUCTO           int                  null,
-   IDUBICACION          int                  null,
-   IDCLIENTE            int                  null,
-   IDTIEMPO             int                  null,
+   IDPRODUCTO           int                  not null,
+   IDUBICACION          int                  not null,
+   IDCLIENTE            int                  not null,
+   IDTIEMPO             int                  not null,
    TIPOTRANSACCION      varchar(50)          not null,
    CANTIDAD             int                  not null,
    PRECIOUNITARIO       decimal(5,2)         not null,
@@ -164,7 +163,7 @@ create table FACTTRANSACCIONES (
    TIEMPOENTREGADIAS    int                  not null,
    DESCUENTO            decimal(8,2)         not null,
    COSTOTOTALTRANSACCION decimal(10,2)       not null,
-   constraint PK_FACTTRANSACCIONES primary key (IDTRANSACCION)
+   constraint PK_FACTTRANSACCIONES primary key (IDPRODUCTO, IDUBICACION, IDCLIENTE, IDTIEMPO)
 )
 go
 
