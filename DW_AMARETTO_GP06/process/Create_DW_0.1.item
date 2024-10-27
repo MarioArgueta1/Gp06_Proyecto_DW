@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:1D5E542ZdiqfvNQx/v53eRc+DkNW8RY7NRLrQJ9J" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/TOS_DI-8.0.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6TnXEJgr+sPqAhjKU7jsGI4VABBghFo318lwIG0H" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_hQOvUHk6Ee-z872y7EPtfw" name="DataOperation"/>
+    <routinesParameter id="_hQ1MRnk6Ee-z872y7EPtfw" name="Mathematical"/>
+    <routinesParameter id="_hQ-WMHk6Ee-z872y7EPtfw" name="Numeric"/>
+    <routinesParameter id="_hQ-WOnk6Ee-z872y7EPtfw" name="Relational"/>
+    <routinesParameter id="_hRIHNnk6Ee-z872y7EPtfw" name="StringHandling"/>
+    <routinesParameter id="_hRIHQHk6Ee-z872y7EPtfw" name="TalendDataGenerator"/>
+    <routinesParameter id="_hRR4OXk6Ee-z872y7EPtfw" name="TalendDate"/>
+    <routinesParameter id="_hRbCKnk6Ee-z872y7EPtfw" name="TalendStringUtil"/>
+    <routinesParameter id="_hRbCIHk6Ee-z872y7EPtfw" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kk6ccH56Ee-3SP6GOVTzjg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AmarettoDW&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;amaretto&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HUuQ8qrZmJOGOzQDt9Y4CxVEYAoCq/xgCK0M92gXMWmy1KU2w2C3cFLI"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;if exists (select 1&#xD;&#xA;   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')&#xD;&#xA;   where r.fkeyid = object_id('FACTTRANSACCIONES') and o.name = 'FK_FACTTRAN_RELATIONS_DIMPRODU')&#xD;&#xA;alter table FACTTRANSACCIONES&#xD;&#xA;   drop constraint FK_FACTTRAN_RELATIONS_DIMPRODU&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if exists (select 1&#xD;&#xA;   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')&#xD;&#xA;   where r.fkeyid = object_id('FACTTRANSACCIONES') and o.name = 'FK_FACTTRAN_RELATIONS_DIMUBICA')&#xD;&#xA;alter table FACTTRANSACCIONES&#xD;&#xA;   drop constraint FK_FACTTRAN_RELATIONS_DIMUBICA&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if exists (select 1&#xD;&#xA;   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')&#xD;&#xA;   where r.fkeyid = object_id('FACTTRANSACCIONES') and o.name = 'FK_FACTTRAN_RELATIONS_DIMCLIEN')&#xD;&#xA;alter table FACTTRANSACCIONES&#xD;&#xA;   drop constraint FK_FACTTRAN_RELATIONS_DIMCLIEN&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if exists (select 1&#xD;&#xA;   from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')&#xD;&#xA;   where r.fkeyid = object_id('FACTTRANSACCIONES') and o.name = 'FK_FACTTRAN_RELATIONS_DIMTIEMP')&#xD;&#xA;alter table FACTTRANSACCIONES&#xD;&#xA;   drop constraint FK_FACTTRAN_RELATIONS_DIMTIEMP&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if exists (select 1&#xD;&#xA;            from  sysobjects&#xD;&#xA;           where  id = object_id('DIMCLIENTE')&#xD;&#xA;            and   type = 'U')&#xD;&#xA;   drop table DIMCLIENTE&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if exists (select 1&#xD;&#xA;            from  sysobjects&#xD;&#xA;           where  id = object_id('DIMPRODUCTO')&#xD;&#xA;            and   type = 'U')&#xD;&#xA;   drop table DIMPRODUCTO&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if exists (select 1&#xD;&#xA;            from  sysobjects&#xD;&#xA;           where  id = object_id('DIMTIEMPO')&#xD;&#xA;            and   type = 'U')&#xD;&#xA;   drop table DIMTIEMPO&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if exists (select 1&#xD;&#xA;            from  sysobjects&#xD;&#xA;           where  id = object_id('DIMUBICACION')&#xD;&#xA;            and   type = 'U')&#xD;&#xA;   drop table DIMUBICACION&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if exists (select 1&#xD;&#xA;            from  sysobjects&#xD;&#xA;           where  id = object_id('FACTTRANSACCIONES')&#xD;&#xA;            and   type = 'U')&#xD;&#xA;   drop table FACTTRANSACCIONES&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;/*==============================================================*/&#xD;&#xA;/* Table: DIMCLIENTE                                            */&#xD;&#xA;/*==============================================================*/&#xD;&#xA;create table DIMCLIENTE (&#xD;&#xA;   IDCLIENTE            int identity(1,1)    not null,&#xD;&#xA;   IDCLIENTEN           int                  not null,&#xD;&#xA;   NOMBRE               varchar(250)         not null,&#xD;&#xA;   DIRECCION            varchar(300)         not null,&#xD;&#xA;   CIUDAD               varchar(300)         not null,&#xD;&#xA;   PAIS                 varchar(100)         not null,&#xD;&#xA;   EMAIL                varchar(250)         not null,&#xD;&#xA;   FECHADENACIMIENTO    datetime             not null,&#xD;&#xA;   GENERO               varchar(10)          not null,&#xD;&#xA;   constraint PK_DIMCLIENTE primary key (IDCLIENTE)&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;/*==============================================================*/&#xD;&#xA;/* Table: DIMPRODUCTO                                           */&#xD;&#xA;/*==============================================================*/&#xD;&#xA;create table DIMPRODUCTO (&#xD;&#xA;   IDPRODUCTO           int identity(1,1)    not null,&#xD;&#xA;   IDPRODUCTON          int                  not null,&#xD;&#xA;   NOMBRE               varchar(250)         not null,&#xD;&#xA;   CATEGORIA            varchar(250)         not null,&#xD;&#xA;   DESCRIPCION          varchar(500)         not null,&#xD;&#xA;   PRECIOUNITARIO       decimal(5,2)         not null,&#xD;&#xA;   STOCK                int                  not null,&#xD;&#xA;   constraint PK_DIMPRODUCTO primary key (IDPRODUCTO)&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;/*==============================================================*/&#xD;&#xA;/* Table: DIMTIEMPO                                             */&#xD;&#xA;/*==============================================================*/&#xD;&#xA;create table DIMTIEMPO (&#xD;&#xA;   IDTIEMPO             int    not null,&#xD;&#xA;   FECHACOMPLETA        datetime             not null,&#xD;&#xA;   DIADELASEMANA        int                  not null,&#xD;&#xA;   NUMERODEDIADELMES    int                  not null,&#xD;&#xA;   NUMERODEDIAENGENERAL int                  not null,&#xD;&#xA;   NOMBREDELDIA         varchar(15)          not null,&#xD;&#xA;   NOMBREDELDIAABREVIADO varchar(3)           not null,&#xD;&#xA;   BANDERDIALUNESAVIERNRES varchar(25)          not null,&#xD;&#xA;   NUMEROSEMANAENELANO  int                  not null,&#xD;&#xA;   NUMERODESEMANAENGENERAL int                  not null,&#xD;&#xA;   FECHADEINICIODESEMANA datetime             not null,&#xD;&#xA;   CLAVEFECHAINICIODESEMANA int                  not null,&#xD;&#xA;   NUMERODEMES          int                  not null,&#xD;&#xA;   NUMERODEMESENGENERAL int                  not null,&#xD;&#xA;   NOMBREDELMES         varchar(15)          not null,&#xD;&#xA;   NOMBREDELMESABREVIADO varchar(3)           not null,&#xD;&#xA;   CUARTO               int                  not null,&#xD;&#xA;   NUMERODEANO          int                  not null,&#xD;&#xA;   ANOMES               int                  not null,&#xD;&#xA;   MESFISCAL            int                  not null,&#xD;&#xA;   CUARTOFISCAL         int                  not null,&#xD;&#xA;   ANOFISCAL            int                  not null,&#xD;&#xA;   BANDERAFINDEMES      varchar(50)          not null,&#xD;&#xA;   FECHADEMISMODIAHACEUNANO datetime             not null,&#xD;&#xA;   constraint PK_DIMTIEMPO primary key (IDTIEMPO)&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;/*==============================================================*/&#xD;&#xA;/* Table: DIMUBICACION                                          */&#xD;&#xA;/*==============================================================*/&#xD;&#xA;create table DIMUBICACION (&#xD;&#xA;   IDUBICACION          int identity(1,1)    not null,&#xD;&#xA;   IDUBICACIONN         int                  not null,&#xD;&#xA;   PAIS                 varchar(100)         not null,&#xD;&#xA;   CIUDAD               varchar(300)         not null,&#xD;&#xA;   DIRECCION            varchar(300)         not null,&#xD;&#xA;   MONEDA               varchar(200)         not null,&#xD;&#xA;   constraint PK_DIMUBICACION primary key (IDUBICACION)&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;/*==============================================================*/&#xD;&#xA;/* Table: FACTTRANSACCIONES                                     */&#xD;&#xA;/*==============================================================*/&#xD;&#xA;create table FACTTRANSACCIONES (&#xD;&#xA;   IDPRODUCTO           int                  not null,&#xD;&#xA;   IDUBICACION          int                  not null,&#xD;&#xA;   IDCLIENTE            int                  not null,&#xD;&#xA;   IDTIEMPO             int                  not null,&#xD;&#xA;   TIPOTRANSACCION      varchar(50)          not null,&#xD;&#xA;   CANTIDAD             int                  not null,&#xD;&#xA;   PRECIOUNITARIO       decimal(5,2)         not null,&#xD;&#xA;   TOTALTRANSACCION     decimal(8,2)         not null,&#xD;&#xA;   COSTOTRASLADO        decimal(8,2)         not null,&#xD;&#xA;   COSTOALMACEN         decimal(8,2)         not null,&#xD;&#xA;   COSTOINVENTARIO      decimal(8,2)         not null,&#xD;&#xA;   TIEMPOENTREGADIAS    int                  not null,&#xD;&#xA;   DESCUENTO            decimal(8,2)         not null,&#xD;&#xA;   COSTOTOTALTRANSACCION decimal(10,2)       not null,&#xD;&#xA;   constraint PK_FACTTRANSACCIONES primary key (IDPRODUCTO, IDUBICACION, IDCLIENTE, IDTIEMPO)&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;alter table FACTTRANSACCIONES&#xD;&#xA;   add constraint FK_FACTTRAN_RELATIONS_DIMPRODU foreign key (IDPRODUCTO)&#xD;&#xA;      references DIMPRODUCTO (IDPRODUCTO)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;alter table FACTTRANSACCIONES&#xD;&#xA;   add constraint FK_FACTTRAN_RELATIONS_DIMUBICA foreign key (IDUBICACION)&#xD;&#xA;      references DIMUBICACION (IDUBICACION)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;alter table FACTTRANSACCIONES&#xD;&#xA;   add constraint FK_FACTTRAN_RELATIONS_DIMCLIEN foreign key (IDCLIENTE)&#xD;&#xA;      references DIMCLIENTE (IDCLIENTE)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;alter table FACTTRANSACCIONES&#xD;&#xA;   add constraint FK_FACTTRAN_RELATIONS_DIMTIEMP foreign key (IDTIEMPO)&#xD;&#xA;      references DIMTIEMPO (IDTIEMPO)&#xD;&#xA;&#xD;&#xA;SET IDENTITY_INSERT DIMCLIENTE ON&#xD;&#xA;INSERT INTO DIMCLIENTE (IDCLIENTE,IDCLIENTEN,NOMBRE,DIRECCION,CIUDAD,PAIS,EMAIL,FECHADENACIMIENTO,GENERO) VALUES(-1,-1,'No aplica','No aplica','No aplica','No aplica','No aplica',GETDATE(),'No aplica')&#xD;&#xA;SET IDENTITY_INSERT DIMCLIENTE OFF&#xD;&#xA;&#xD;&#xA;SET IDENTITY_INSERT DIMPRODUCTO ON&#xD;&#xA;INSERT INTO DIMPRODUCTO (IDPRODUCTO,IDPRODUCTON,NOMBRE,CATEGORIA,DESCRIPCION,PRECIOUNITARIO,STOCK) VALUES(-1,-1,'No aplica','No aplica','No aplica',0.00,0)&#xD;&#xA;SET IDENTITY_INSERT DIMPRODUCTO OFF&#xD;&#xA;&#xD;&#xA;SET IDENTITY_INSERT DIMUBICACION ON&#xD;&#xA;INSERT INTO DIMUBICACION (IDUBICACION,IDUBICACIONN,PAIS,CIUDAD,DIRECCION,MONEDA) VALUES(-1,-1,'No aplica','No aplica','No aplica','No aplica')&#xD;&#xA;SET IDENTITY_INSERT DIMUBICACION OFF&#xD;&#xA;&#xD;&#xA;insert into DIMTIEMPO&#xD;&#xA;select date_key, full_date, day_of_week, day_num_in_month, day_num_overall, day_name, day_abbrev, weekday_flag, &#xD;&#xA;week_num_in_year, week_num_overall, week_begin_date, week_begin_date_key, [month], month_num_overall, month_name, &#xD;&#xA;month_abbrev, [quarter], [year], yearmo, fiscal_month, fiscal_quarter, fiscal_year, last_day_in_month_flag, &#xD;&#xA;same_day_year_ago_date from Date_Dimension&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="SQL_Server_DW"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

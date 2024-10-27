@@ -105,6 +105,10 @@
     "version" : "Latest",
     "type" : "property"
   }, {
+    "id" : "_nODT0H54Ee-3SP6GOVTzjg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "_kk6ccH56Ee-3SP6GOVTzjg - DIMCLIENTE",
     "version" : "Latest",
     "type" : "schema"
@@ -124,6 +128,17 @@
     "id" : "_kk6ccH56Ee-3SP6GOVTzjg - FACTTRANSACCIONES",
     "version" : "Latest",
     "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_pO-gkJSvEe-N_Pn3YsliTA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_kk6ccH56Ee-3SP6GOVTzjg",
+    "version" : "Latest",
+    "type" : "property"
   } ]
 }, {
   "baseItem" : {
@@ -152,6 +167,10 @@
     "type" : "job"
   }, {
     "id" : "DW_AMARETTO_GP06:_WZRt0IjmEe-qQZVq5g8HBg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "DW_AMARETTO_GP06:_pO-gkJSvEe-N_Pn3YsliTA",
     "version" : "Latest",
     "type" : "job"
   }, {
