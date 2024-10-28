@@ -1,14 +1,7 @@
 SELECT e.entity_id as 'IdProducto', sor.entity_id as 'IdUbicacion', c.entity_id as 'IdCliente', DATE_FORMAT(so.created_at, '%Y%m%d') as 'IdTiempo', 'Venta' as 'TipoTransaccion', soi.qty_ordered as 'Cantidad', cped.value as 'PrecioUnitario', ((soi.qty_ordered * cped.value) - soi.discount_amount) as 'TotalTransaccion', 
-CASE sor.country_id
-	WHEN 'BZ' THEN 30  
-	WHEN 'CR' THEN 25  
-	WHEN 'SV' THEN 5   
-	WHEN 'GT' THEN 10  
-	WHEN 'HN' THEN 8   
-	WHEN 'NI' THEN 20  
-	WHEN 'PA' THEN 35  
-	WHEN 'MX' THEN 40  
-	ELSE 5000000           
+CASE so.total_qty_ordered
+    WHEN 1 THEN so.base_shipping_amount
+    ELSE (so.base_shipping_amount/so.total_qty_ordered)*soi.qty_ordered
 END as 'CostoTraslado',
 CASE 
     WHEN soi.qty_ordered BETWEEN 0 AND 10 THEN 5  
@@ -24,17 +17,10 @@ END as 'CostoAlmacen',
     WHEN soi.qty_ordered BETWEEN 51 AND 100 THEN 25 
     WHEN soi.qty_ordered > 100 THEN 35
     END + 
-CASE sor.country_id
-    WHEN 'BZ' THEN 30  
-    WHEN 'CR' THEN 25  
-    WHEN 'SV' THEN 5   
-    WHEN 'GT' THEN 10  
-    WHEN 'HN' THEN 8   
-    WHEN 'NI' THEN 20  
-    WHEN 'PA' THEN 35  
-    WHEN 'MX' THEN 40  
-    ELSE 5000000           
-    END) as 'CostoInventario', 
+CASE so.total_qty_ordered
+    WHEN 1 THEN so.base_shipping_amount
+    ELSE (so.base_shipping_amount/so.total_qty_ordered)*soi.qty_ordered
+END) as 'CostoInventario', 
 CASE sor.country_id
     WHEN 'BZ' THEN 15  
     WHEN 'CR' THEN 7   
@@ -55,17 +41,10 @@ soi.discount_amount as 'Descuento',
         WHEN soi.qty_ordered BETWEEN 51 AND 100 THEN 25 
         WHEN soi.qty_ordered > 100 THEN 35
     END + 
-    CASE sor.country_id
-        WHEN 'BZ' THEN 30  
-        WHEN 'CR' THEN 25  
-        WHEN 'SV' THEN 5   
-        WHEN 'GT' THEN 10  
-        WHEN 'HN' THEN 8   
-        WHEN 'NI' THEN 20  
-        WHEN 'PA' THEN 35  
-        WHEN 'MX' THEN 40  
-        ELSE 5000000           
-    END) AS 'CostoTotalTransaccion'
+	CASE so.total_qty_ordered
+    	WHEN 1 THEN so.base_shipping_amount
+    	ELSE (so.base_shipping_amount/so.total_qty_ordered)*soi.qty_ordered
+	END) AS 'CostoTotalTransaccion'
 FROM catalog_product_entity e
 INNER JOIN sales_order_item soi on e.entity_id = soi.product_id 
 INNER JOIN sales_order so ON so.entity_id = soi.order_id
