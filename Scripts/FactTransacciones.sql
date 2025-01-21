@@ -1,25 +1,13 @@
 SELECT e.entity_id as 'IdProducto', sor.entity_id as 'IdUbicacion', c.entity_id as 'IdCliente', DATE_FORMAT(so.created_at, '%Y%m%d') as 'IdTiempo', 'Venta' as 'TipoTransaccion', soi.qty_ordered as 'Cantidad', cped.value as 'PrecioUnitario', ((soi.qty_ordered * cped.value) - soi.discount_amount) as 'TotalTransaccion', 
 CASE so.total_qty_ordered
-    WHEN 1 THEN so.base_shipping_amount
-    ELSE (so.base_shipping_amount/so.total_qty_ordered)*soi.qty_ordered
+    WHEN 1 THEN ABS(so.base_shipping_amount - 1)
+    ELSE ABS(((SELECT value FROM core_config_data WHERE path = 'carriers/flatrate/price')*soi.qty_ordered))
 END as 'CostoTraslado',
-CASE 
-    WHEN soi.qty_ordered BETWEEN 0 AND 10 THEN 5  
-    WHEN soi.qty_ordered BETWEEN 11 AND 20 THEN 10 
-    WHEN soi.qty_ordered BETWEEN 21 AND 50 THEN 15 
-    WHEN soi.qty_ordered BETWEEN 51 AND 100 THEN 25 
-    WHEN soi.qty_ordered > 100 THEN 35
-END as 'CostoAlmacen', 
-(CASE 
-	WHEN soi.qty_ordered BETWEEN 0 AND 10 THEN 5  
-    WHEN soi.qty_ordered BETWEEN 11 AND 20 THEN 10 
-    WHEN soi.qty_ordered BETWEEN 21 AND 50 THEN 15 
-    WHEN soi.qty_ordered BETWEEN 51 AND 100 THEN 25 
-    WHEN soi.qty_ordered > 100 THEN 35
-    END + 
+1/(SELECT COUNT(*) FROM sales_order_item soi WHERE soi.order_id = so.entity_id) as 'CostoAlmacen', 
+(1/(SELECT COUNT(*) FROM sales_order_item soi WHERE soi.order_id = so.entity_id) + 
 CASE so.total_qty_ordered
-    WHEN 1 THEN so.base_shipping_amount
-    ELSE (so.base_shipping_amount/so.total_qty_ordered)*soi.qty_ordered
+    WHEN 1 THEN ABS(so.base_shipping_amount - 1)
+    ELSE ABS(((SELECT value FROM core_config_data WHERE path = 'carriers/flatrate/price')*soi.qty_ordered))
 END) as 'CostoInventario', 
 CASE sor.country_id
     WHEN 'BZ' THEN 15  
@@ -34,16 +22,10 @@ CASE sor.country_id
 END AS 'TiempoEntregaDias', 
 soi.discount_amount as 'Descuento',
 ((soi.qty_ordered * cped.value) - soi.discount_amount) + 
-    (CASE 
-        WHEN soi.qty_ordered BETWEEN 0 AND 10 THEN 5  
-        WHEN soi.qty_ordered BETWEEN 11 AND 20 THEN 10 
-        WHEN soi.qty_ordered BETWEEN 21 AND 50 THEN 15 
-        WHEN soi.qty_ordered BETWEEN 51 AND 100 THEN 25 
-        WHEN soi.qty_ordered > 100 THEN 35
-    END + 
+    (1/(SELECT COUNT(*) FROM sales_order_item soi WHERE soi.order_id = so.entity_id) + 
 	CASE so.total_qty_ordered
-    	WHEN 1 THEN so.base_shipping_amount
-    	ELSE (so.base_shipping_amount/so.total_qty_ordered)*soi.qty_ordered
+    	WHEN 1 THEN ABS(so.base_shipping_amount - 1)
+    	ELSE ABS(((SELECT value FROM core_config_data WHERE path = 'carriers/flatrate/price')*soi.qty_ordered))
 	END) AS 'CostoTotalTransaccion'
 FROM catalog_product_entity e
 INNER JOIN sales_order_item soi on e.entity_id = soi.product_id 

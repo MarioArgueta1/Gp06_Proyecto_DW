@@ -10,7 +10,7 @@ CASE
     WHEN a.country_id = 'HN' THEN 'Honduras'
     WHEN a.country_id = 'NI' THEN 'Nicaragua'
     WHEN a.country_id = 'PA' THEN 'Panama'
-    WHEN a.country_id = 'MX' THEN 'Mexico'
+    WHEN a.country_id = 'US' THEN 'Estados Unidos'
     ELSE 'Sin Especificar' 
 END AS 'Pais',
 c.email AS 'email', 
