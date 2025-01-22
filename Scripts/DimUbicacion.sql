@@ -7,7 +7,7 @@ WHEN 'GT' THEN 'Guatemala'
 WHEN 'HN' THEN 'Honduras'
 WHEN 'NI' THEN 'Nicaragua'
 WHEN 'PA' THEN 'Panama'
-WHEN 'MX' THEN 'Mexico'
+WHEN 'US' THEN 'Estados Unidos'
 ELSE 'Sin especificar'
 END AS 'Pais',
 sor.city as 'Ciudad',
