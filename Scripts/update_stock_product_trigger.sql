@@ -9,7 +9,7 @@ BEGIN
             (SELECT name FROM product_template WHERE id = (SELECT product_tmpl_id FROM product_product WHERE id = NEW.product_id)),
             (SELECT default_code FROM product_product WHERE id = NEW.product_id),
             'stock_increase',
-            (NEW.quantity - COALESCE(OLD.quantity, 0)),
+            ABS((NEW.quantity - COALESCE(OLD.quantity, 0))),
             TO_CHAR(CURRENT_DATE, 'YYYYMMDD')::INT
         );
     END IF;
